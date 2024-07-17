@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin-top: 5rem;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 1em 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.text{
+    color: red;
+    size: 50px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: #45a049;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 80px 1em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+#map-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#map {
+    width: 70%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#station-list {
+    width: 25%;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#station-list h2 {
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#station-list ul {
+    list-style: none;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#station-list ul li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+#station-list ul li:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}

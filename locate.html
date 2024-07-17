@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate Stations</title>
+    <link rel="stylesheet" href="locate.css">
+    <!-- Google Maps API with your API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" async defer></script>
+    <script src="locate.js"></script> <!-- Corrected script tag -->
+</head>
+<body onload="initMap()">
+    <header>
+        <nav>
+            <ul style="font-family:verdana;font-size:30px" class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="locate-stations.html">Locate Stations</a></li>
+                <li><a href="book-swap.html">Book a Swap</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Find a Battery Swap Station Near You</h1>
+        <div id="map-container">
+            <div id="map"></div>
+            <div id="station-list">
+                <h2>Nearby Stations</h2>
+                <ul id="stations"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 EV Battery Swap. All rights reserved.</p>
+    </footer>
+</body>
+</html>
